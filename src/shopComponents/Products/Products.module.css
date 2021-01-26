@@ -1,0 +1,92 @@
+.Container {
+    background-color: rgb(187, 198, 230);
+}
+
+@media only screen and (min-width: 768px) {
+    .Container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /* background-color: rgb(26, 34, 58); */
+        background-color: rgb(187, 198, 230);
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}   
+
+/* =================================================================================== */
+/* =================================================================================== */
+
+
+
+
+.ItemWrapper {
+    height: 250px;
+    /* width: 100%; */
+    background: rgb(207, 182, 182);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 13px;
+}
+.Container {
+    background-color: rgb(187, 198, 230);
+}
+.Image {
+    height: 70%;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+.Add {
+    cursor: pointer;
+}
+.Cost {
+    font-weight: bolder;
+}
+.Image img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ProductDetails {
+    display: flex;
+    height: 15%;
+    justify-content: space-around;
+    /* background:purple; */
+    align-items: center;
+}
+.Price {
+    height: 15%;
+    /* background: white; */
+    letter-spacing: 0.1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.Price p {
+    font-weight: bolder;
+}
+
+@media only screen and (min-width: 768px) {
+    .Container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        /* background-color: rgb(26, 34, 58); */
+        background-color: rgb(187, 198, 230);
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .ItemWrapper {
+        flex-basis: 24%;    
+    }
+}   

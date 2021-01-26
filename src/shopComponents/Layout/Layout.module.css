@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Layout {
+    height: 100%;
+    /* background-color: rgb(165, 221, 165); */
+    padding: 20PX;
+    /* position: relative; */
+}

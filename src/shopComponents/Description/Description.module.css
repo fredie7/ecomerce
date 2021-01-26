@@ -1,0 +1,66 @@
+.Container {
+    padding: 20px;
+    /* background: coral; */
+    display: flex;
+    /* height: 100vh; */
+}
+.Wrapper {
+}
+.Title h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.Description {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.Cost {
+    display: flex;
+}
+.Image {
+    /* flex-basis: 30%; */
+    /* background: red; */
+    height: 200px;
+    margin-bottom: 20px;
+}
+.Image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.Describe {
+}
+.Model {
+    margin-bottom: 10px;
+}
+.Made {
+    display: flex;
+    /* font-size: large; */
+    font-weight: 37px;
+    font-family: cursive;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.Made p {
+}
+.Price, .Info, .Desc, .Btn {
+    margin-bottom: 10px;
+}
+.Btn {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .Description {
+        flex-direction: row;
+    }
+    .Image {
+        flex-basis: 30%;
+    }
+    .Describe {
+        flex-basis: 45%;
+    }
+}

@@ -1,0 +1,64 @@
+.Navicon {
+    height: 3px;
+    width: 37px;
+    background-color: black;
+    margin-bottom: 7.5px;
+}
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    height: 40px;
+    /* background-color: red; */
+}
+.Search {
+    flex: 1;
+    /* height: 100%; */
+}
+.Searchbar {
+    width: 100%;
+    height: 100%;
+}
+.Searchinput {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 17px;
+    letter-spacing: 0.08rem;
+}
+.Logo, .Icon {
+    flex-basis: 20%;
+    /* background: blue; */
+    height: 100%;
+}
+.Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Icon {
+    /* background: green; */
+}
+.Iconbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+.Thirditem {
+    position: absolute;
+    bottom: 50px;
+}
+@media only screen and (min-width: 768px) {
+    .Side {
+        width: 25%;
+    }
+}

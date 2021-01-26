@@ -1,0 +1,43 @@
+.Container {
+    position: absolute;  
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Wrapper {
+    padding: 8px;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+    background: rgb(101, 151, 146);
+}
+.Img {
+    height: 60%;
+    background-color: tomato;
+}
+.Img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+}
+.Title, .Price, .Continue, .Cart {
+    text-align: center;
+    margin-bottom: 6px;
+    /* font-size: 14px; */
+    text-transform: capitalize;
+    color: white;
+}
+.Continue, .Cart {
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: teal;
+}
+.Incart h3 {
+    text-align: center;
+    color: white;
+}
