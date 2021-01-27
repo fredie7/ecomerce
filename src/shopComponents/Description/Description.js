@@ -2,19 +2,23 @@ import React, { useContext } from 'react';
 import classes from './Description.module.css';
 import image from '../../image/toma2.jpg';
 import { ProductContext } from '../../context/ProductContext';
+import { useLocation } from 'react-router-dom';
 
 const Description = (props) => {
+    const location = useLocation();
+    console.log(location)
+    const { product } = location;
     const { productDetails } = useContext(ProductContext)
-    console.log(productDetails)
+    // console.log(productDetails)
     return (
         <div className={classes.Container}>
             <div className={classes.Wrapper}>
                 <div className={classes.Title}>
-                    <h3>Title</h3>
+                    <h3>{product.title}</h3>
                 </div>
                 <div className={classes.Description}>
                     <div className={classes.Image}>
-                        <img src={image} alt=""/>
+                        <img src={product.img} alt=""/>
                     </div>
                     <div className={classes.Describe}>
                         <div className={classes.Model}>
@@ -22,14 +26,14 @@ const Description = (props) => {
                         </div>
                         <div className={classes.Made}>
                             <p>made by:</p>
-                            <div className={classes.Company}>company</div>
+                            <div className={classes.Company}>{product.company}</div>
                         </div>
                         <div className={classes.Price}>
                             <div className={classes.Cost}>
                                 <div className={classes.Amount}>Price:</div>
                                 <div className={classes.Amt}>
                                     <span>$</span>
-                                    <span>20</span>
+                                    <span>{product.price}</span>
                                 </div>
                             </div>
                         </div>
@@ -37,11 +41,12 @@ const Description = (props) => {
                             <p>info about item:</p>
                         </div>
                         <div className={classes.Desc}>
+                            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolorem?
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolorem?
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolorem?
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolorem?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolorem?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolorem?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, dolorem? */}
+                            {product.info}
                         </div>
                         <div className={classes.Btn}>
                             <div className={classes.Back}>

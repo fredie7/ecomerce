@@ -6,7 +6,7 @@ const Sidebar = (props) => {
     console.log(props.toggle)
     return (
         <div className={classes.Side} >
-            <div className={classes.Sidecontent}>
+            <div className={classes.Sidecontent} style={{display: props.toggle ? 'block' : 'none'}}>
                 <div className={classes.Firstitem}>
                     <p>first item</p>
                 </div>
