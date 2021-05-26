@@ -3,7 +3,7 @@ import classes from './Sidebar.module.css';
 
 const Sidebar = (props) => {
     // const [toggle, settoggle] = useState(false)
-    console.log(props.toggle)
+    // console.log(props.toggle)
     return (
         <div className={classes.Side} >
             <div className={classes.Sidecontent} style={{display: props.toggle ? 'block' : 'none'}}>

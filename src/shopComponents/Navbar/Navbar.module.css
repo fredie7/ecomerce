@@ -10,7 +10,10 @@
     width: 100%;
     margin-top: 10px;
     height: 40px;
-    /* background-color: red; */
+    background-color: rgb(245, 235, 235);
+    /* position: fixed;
+    top: 0;
+    margin-top: 0px; */
 }
 .Search {
     flex: 1;

@@ -6,15 +6,29 @@
 }
 .Wrapper {
 }
+.Viewcart {
+    background: #183a19ad;
+    padding: 0.7rem;
+    border-radius: 9px;
+    color: white;
+    border: 2px solid rgb(49, 7, 7);
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: cursive;
+    letter-spacing: 0.3rem;
+}
 .Title h3 {
     text-align: center;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 .Description {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
 }
+
 .Cost {
     display: flex;
 }
@@ -52,6 +66,20 @@
     justify-content: space-around;
     cursor: pointer;
 }
+.Desc {
+    font-size: 1.8rem;
+    letter-spacing: 0.23rem;
+}
+.Made, .Price, .Info, .Model, .Title {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+.Add h4 {
+    font-size: 2.2rem;
+}
+.Back h4 {
+    font-size: 2.2rem;
+}
 
 @media only screen and (min-width: 768px) {
     .Description {
@@ -62,5 +90,15 @@
     }
     .Describe {
         flex-basis: 45%;
+    }
+    .Title h3 {
+        text-align: center;
+        margin-left: 43px;
+    }
+    .Add h4 {
+        font-size: 2.2rem;
+    }
+    .Back h4 {
+        font-size: 2.2rem;
     }
 }

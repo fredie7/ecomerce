@@ -5,16 +5,17 @@ import { useHistory } from 'react-router-dom';
 
 const ProductItems = (props) => {
     const history = useHistory()
-    const { addToCart } = props
+    const { addToCart, products, filteredProducts } = props
     // const { products, setProducts, itemDetails } = useContext(ProductContext)
     // console.log(props.addToCart)
-    console.log(props.products)
-    console.log(props.cart)
+    // console.log(props.products)
+    // console.log(props.cart)
+    console.log(filteredProducts)
     return (
         <>
             {
-                props.products && props.products.map(product => {
-                    const { id, img, price, title } = product;
+                products && products.map(product => {
+                    const { id, img, price, title, inCart } = product;
                     return (
                         <div className={classes.ItemWrapper} key={id}
                         onClick={()=>{history.push({pathname:'/description', product:product})}}
@@ -28,7 +29,10 @@ const ProductItems = (props) => {
                                     <span>{price}</span>
                                 </div>
                                 <div className={classes.Add} onClick={()=>addToCart(id)}>
-                                    <i className="fas fa-shopping-cart"></i>
+                                    {/* <i className="fas fa-shopping-cart"></i> */}
+                                    {inCart ? 'In Cart' : 
+                                        <i className="fas fa-shopping-cart"></i>
+                                    }
                                 </div>
                             </div>
                             <div className={classes.Price}>

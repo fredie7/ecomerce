@@ -24,6 +24,9 @@
 .Title {
     text-align: center;
 }
+.Chevup, .Chevdown{
+    font-size: 2rem;
+}
 .Chev {
     display: flex;
     flex-direction: column;
@@ -33,6 +36,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 2.3rem;
+    font-weight: bolder;
 }
 
 .Chev, .Remove {
@@ -41,7 +46,7 @@
 
 
 .Basecontainer {
-    height: 160px;
+    height: 270px;
     background: rgb(54, 28, 33);
     position: fixed;
     bottom: 0;
@@ -59,10 +64,12 @@
     border-radius: 8px;
     padding: 5px;
     text-align: center;
-    font-size: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
     /* font-family: cursive; */
     font-weight: bolder;
     cursor: pointer;
+    letter-spacing: 0.3rem !important;
 }
 .Checkout {
     border: 1px solid black;
@@ -72,12 +79,23 @@
     font-size: 20px;
     font-weight: bolder;
     cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem !important;
+    color: white;
 }
-.Subtotal, .Tax, .Tottal {
+.Subtotal, .Tax, .Tottal, .Checkout {
     text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    /* margin-top: 10px; */
 }
 .Subtotall, .Taxx, .Totttal {
     display: flex;
     justify-content: center;
     font-weight: bold;
+}
+@media only screen and (min-width: 992px) {
+    .Basecontainer{
+        /* height: 200px; */
+    }
 }

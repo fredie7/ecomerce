@@ -1,0 +1,211 @@
+.FormContainer {
+    height: 40rem;
+    /* width: 30rem; */
+    width: 100vw;
+    /* background-color: violet; */
+    background-color: #f1f1f1;
+    padding: 5px;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+.Formwrapper h3 {
+    margin-top: 30px;
+    text-transform: capitalize;
+}
+.Wrapper {
+    width: 40rem;
+}
+.Card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.Card p {
+    font-size: 1.6rem;
+}
+.Cardnumber {
+    display: flex;
+    justify-content: space-between;
+}
+.Cardnumber p {
+    font-size: 1.6rem;
+}
+
+.Cardinput {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.Cardholderinput {
+    flex-basis: 60%;
+}
+.Cardholderinput input {
+    width: 100%;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 6px;
+}
+.Expirydateinput {
+    flex-basis: 20%;
+    /* background-color: red; */
+}
+.Exp {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.Exp input {
+    flex-basis: 48%;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+.Cardhold {
+    display: flex;
+    justify-content: space-between;
+}
+.Cardholdinput {
+    flex-basis: 60%;
+}
+.Cardholdcvcinput {
+    flex-basis: 30%;
+}
+.Cardholdinput input {
+    width: 100%;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 6px;
+}
+.Cardholdcvcinput input {
+    width: 100%;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 6px;
+}
+
+.Cardholder p, .Expirydate p, .Cardnumber p, .Cvc p {
+    font-size: 2.2rem;
+}
+.Cardnumber {
+    margin-top: 30px;
+}
+.Cvc {
+    font-weight: bold;
+}
+
+.Formwrapper {
+    /* height: 70vh; */
+}
+.Proceed {
+    background-color: rgb(46, 116, 46);
+    color: white;
+    text-transform: uppercase !important;
+    font-family: cursive;
+    font-size: 2.5rem;
+    border-radius: 8px;
+    border: 2px solid orangered;
+    text-align: center;
+    margin-top: 40px;
+    padding: 7px;
+    letter-spacing: 0.8rem;
+    cursor: pointer;
+}
+.Pay {
+    text-align: center;
+    font-family: cursive;
+}
+
+@media only screen and (min-width:768px) {
+    .Cardholder p, .Expirydate p, .Cardnumber p, .Cvc p {
+        font-size: 2.3rem !important;
+    }
+    
+    .FormContainer {
+        height: 40rem;
+        /* width: 30rem; */
+        width: 100%;
+        background-color: #f1f1f1;
+        height: 100vh;
+    }
+    .Wrapper{
+        height: 70vh;
+    }
+    
+    .Card {
+        display: flex;
+        justify-content: space-between;
+    }
+    .Card p {
+        font-size: 1.6rem;
+    }
+    .Cardnumber {
+        display: flex;
+        justify-content: space-between;
+    }
+    .Cardnumber p {
+        font-size: 1.6rem;
+    }
+        
+    .Cardinput {
+        display: flex;
+        justify-content: space-between;
+    }
+    .Cardholderinput {
+        flex-basis: 60%;
+        flex-direction: row;
+    }
+    .Cardholderinput input {
+        width: 100%;
+        padding: 15px;
+        font-size: 25px;
+        border-radius: 6px;
+    }
+    .Expirydateinput {
+        flex-basis: 20%;
+        /* background-color: red; */
+    }
+    .Exp {
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+    .Exp input {
+        flex-basis: 48%;
+        padding: 15px;
+        font-size: 25px;
+        border-radius: 6px;
+    }
+    .Cardhold {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .Cardholdinput {
+        flex-basis: 60%;
+    }
+    .Cardholdcvcinput {
+        flex-basis: 30%;
+    }
+    .Cardholdinput input {
+        width: 100%;
+        padding: 15px;
+        font-size: 25px;
+        border-radius: 6px;
+    }
+    .Cardholdcvcinput input {
+        width: 100%;
+        padding: 15px;
+        font-size: 25px;
+        border-radius: 6px;
+    }
+    h3 .Proceed {
+        text-transform: uppercase !important;
+        cursor: pointer;
+    }
+}
