@@ -7,12 +7,10 @@ const ProductContextProvider = props => {
     const [products, setProducts] = useState([])
     const [productDetails, setProductDetails] = useState(detailProduct)
     const [cart, setCart] = useState([])
-    const [filteredProducts, setFilteredProducts] = useState([])
+    const [filteredProducts, setFilteredProducts] = useState(null)
     const [cartTotalDetails, setCartTotalDetails] = useState({cartCurrentTax:0, cartTax:0,cartTotals:0,subTotal:0})
     
-    useEffect(()=> {
-        setUpProducts()
-    }, [])
+    
 
     const setUpProducts = ()=> {
         let items = []
@@ -22,6 +20,10 @@ const ProductContextProvider = props => {
         })
         return setProducts(items)
     }
+
+    useEffect(()=> {
+        setUpProducts()
+    }, [])
 
     const getProduct = id=> {
         const product = products.find(item => item.id === id)

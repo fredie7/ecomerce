@@ -5,7 +5,7 @@
     /* background-color: violet; */
     background-color: #f1f1f1;
     padding: 5px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,6 +118,7 @@
 .Pay {
     text-align: center;
     font-family: cursive;
+    font-size: 1.3rem;
 }
 
 @media only screen and (min-width:768px) {

@@ -21,6 +21,9 @@ const Navbar = () => {
         // result = products.filter(product=> product.title.indexOf(value) != -1)
         // console.log(result)
         setFilteredProducts(result)
+        if (value.length === 0) {
+            return setFilteredProducts(null)
+        }
     }
     // console.log(filteredProducts)
 
