@@ -67,7 +67,7 @@
     cursor: pointer;
 }
 .Desc {
-    font-size: 1.8rem;
+    font-size: 1rem;
     letter-spacing: 0.23rem;
 }
 .Made, .Price, .Info, .Model, .Title {
@@ -75,7 +75,7 @@
     letter-spacing: 0.2rem;
 }
 .Add h4 {
-    font-size: 2.2rem;
+    font-size: 1.3rem;
 }
 .Back h4 {
     font-size: 2.2rem;

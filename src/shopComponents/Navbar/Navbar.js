@@ -57,7 +57,7 @@ const Navbar = () => {
                 <div className={classes.Logo}>
                     <Link to="/Cart">
                         <div className={classes.Symbol}>
-                            <i className="fas fa-shopping-cart"></i>cart
+                            <i className="fas fa-shopping-cart"></i>
                         </div>
                     </Link>
                 </div>
