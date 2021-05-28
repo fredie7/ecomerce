@@ -25,7 +25,7 @@
     text-align: center;
 }
 .Chevup, .Chevdown{
-    font-size: 2rem;
+    font-size: 1rem;
 }
 .Chev {
     display: flex;
@@ -36,7 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2.3rem;
+    font-size: 1rem;
     font-weight: bolder;
 }
 
@@ -64,7 +64,7 @@
     border-radius: 8px;
     padding: 5px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     /* font-family: cursive; */
     font-weight: bolder;
@@ -76,7 +76,7 @@
     border-radius: 8px;
     padding: 5px;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: bolder;
     cursor: pointer;
     text-transform: uppercase;
@@ -85,7 +85,7 @@
 }
 .Subtotal, .Tax, .Tottal, .Checkout {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
     letter-spacing: 0.2rem;
     /* margin-top: 10px; */
 }
