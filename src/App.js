@@ -1,11 +1,11 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, } from 'react-router-dom';
 import Navbar from './shopComponents/Navbar/Navbar';
 import Layout from './shopComponents/Layout/Layout';
 import Cart from './shopComponents/Cart/Cart';
 import Checkout from './shopComponents/CheckOut/CheckOut';
 import Products from './shopComponents/Products/Products';
-import Modal from './shopComponents/Modal/Modal';
+// import Modal from './shopComponents/Modal/Modal';
 import Description from './shopComponents/Description/Description';
 import ProductContext from './context/ProductContext';
 

@@ -1,6 +1,4 @@
-import React, { useEffect, useContext } from 'react';
 import classes from './ProductItems.module.css';
-import {ProductContext} from '../../../context/ProductContext';
 import { useHistory } from 'react-router-dom';
 
 const ProductItems = (props) => {

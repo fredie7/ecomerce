@@ -1,8 +1,7 @@
 import React, { useState, useContext, useRef, useEffect } from 'react';
 import classes from './Navbar.module.css';
-import Overlay from '../Overlay/Overlay';
+// import Overlay from '../Overlay/Overlay';
 import Sidebar from '../Sidebar/Sidebar';
-import Cart from '../Cart/Cart';
 import {Link} from 'react-router-dom';
 import {ProductContext} from '../../context/ProductContext';
 
@@ -12,12 +11,12 @@ const Navbar = () => {
     const {products, setFilteredProducts} = useContext(ProductContext);
     // const [filteredProducts, setFilteredProducts] = useState([])
     const [toggle, setToggle] = useState(false)
-    const [toggleCart, setToggleCart] = useState(false)
+    // const [toggleCart, setToggleCart] = useState(false)
     
     const handleSearch = e=> {
         const value = e.target.value.toLowerCase()
         let result = []
-        result = products.filter(product=> product.title.search(value) != -1)
+        result = products.filter(product=> product.title.search(value) !== -1)
         // result = products.filter(product=> product.title.indexOf(value) != -1)
         // console.log(result)
         setFilteredProducts(result)

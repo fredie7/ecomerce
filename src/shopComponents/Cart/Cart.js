@@ -1,13 +1,12 @@
 import React, { useContext } from 'react'
 import classes from './Cart.module.css';
-import image from '../../image/toma2.jpg';
 import {ProductContext} from '../../context/ProductContext';
 import {Link} from 'react-router-dom';
 
 const Cart = () => {
-    const {products, cart, cartTotalDetails, clearCart,removeProduct,increment,decrement} = useContext(ProductContext)
+    const { cart, cartTotalDetails, clearCart,removeProduct,increment,decrement} = useContext(ProductContext)
     // console.log(cart)
-    const { cartCurrentTax,cartTax,cartTotals,subTotal } = cartTotalDetails
+    const { cartTax,cartTotals,subTotal } = cartTotalDetails
     
     const cartItems = cart.map(cartItem => {
         const{ id,title,img,price,total,count, } = cartItem

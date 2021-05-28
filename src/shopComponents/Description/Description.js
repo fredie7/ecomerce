@@ -1,16 +1,16 @@
-import React, { useContext,useState } from 'react';
+import React, { useContext } from 'react';
 import classes from './Description.module.css';
-import image from '../../image/toma2.jpg';
 import { ProductContext } from '../../context/ProductContext';
-import { useLocation,useParams, Link } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 const Description = (props) => {
     const location = useLocation();
     // console.log(location)
     const { product } = location;
-    const { productDetails, addToCart, products } = useContext(ProductContext)
+    // const { productDetails, addToCart, products } = useContext(ProductContext)
+    const { addToCart } = useContext(ProductContext)
     // console.log(productDetails)
-    const selectedProduct = products.find(item => item.id === product.id)
+    // const selectedProduct = products.find(item => item.id === product.id)
     // if (selectedProduct === 'undefined') {
     //     return null
     // }

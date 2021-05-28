@@ -5,7 +5,7 @@ import classes from './Products.module.css';
 import {ProductContext} from '../../context/ProductContext';
 
 const Products = () => {
-    const { products, itemDetails, addToCart,cart, setCart,filteredProducts } = useContext(ProductContext)
+    const { products, itemDetails, addToCart,cart,filteredProducts } = useContext(ProductContext)
     return (
         <>
             <Banner />
