@@ -4,7 +4,6 @@
     width: 100vw;
     /* background-color: violet; */
     background-color: #f1f1f1;
-    padding: 4rem;
     font-size: 1.6rem;
     display: flex;
     justify-content: center;
@@ -12,6 +11,11 @@
     /* height: 100vh; */
     margin-top: 2rem;
 }
+.Formwrapper {
+    padding: 4rem;
+    /* height: 70vh; */
+}
+
 .Formwrapper h3 {
     margin-top: 30px;
     text-transform: capitalize;
@@ -69,6 +73,9 @@
     font-size: 12px;
     border-radius: 6px;
 }
+input {
+    border: none;
+}
 .Cardhold {
     display: flex;
     justify-content: space-between;
@@ -102,9 +109,7 @@
     font-weight: bold;
 }
 
-.Formwrapper {
-    /* height: 70vh; */
-}
+
 .Proceed {
     background-color: rgb(46, 116, 46);
     color: white;

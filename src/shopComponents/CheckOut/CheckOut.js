@@ -8,9 +8,9 @@ const CheckOut = () => {
                 <div className={classes.FormContainer}>
                     <div className={classes.Wrapper}>
                     <div className={classes.Total}>
-                        <h3 className={classes.TotalPrice}>TOTAL AMOUNT: <span>$</span>10</h3>
                     </div>
                     <div className={classes.Formwrapper}>
+                        <h3 className={classes.TotalPrice}>TOTAL AMOUNT: <span>$</span>10</h3>
                         <h3 className={classes.Detail}>credit card details</h3>
                         <div className={classes.Card}>
                             <div className={classes.Cardholder}>
