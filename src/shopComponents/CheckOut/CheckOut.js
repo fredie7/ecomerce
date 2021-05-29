@@ -11,7 +11,7 @@ const CheckOut = () => {
                         <h3 className={classes.TotalPrice}>TOTAL AMOUNT: <span>$</span>10</h3>
                     </div>
                     <div className={classes.Formwrapper}>
-                        <h3>credit card details</h3>
+                        <h3 className={classes.Detail}>credit card details</h3>
                         <div className={classes.Card}>
                             <div className={classes.Cardholder}>
                                 <p>card holder</p>

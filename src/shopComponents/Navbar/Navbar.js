@@ -9,7 +9,6 @@ import {ProductContext} from '../../context/ProductContext';
 const Navbar = () => {
     const searched = useRef('')
     const {products, setFilteredProducts} = useContext(ProductContext);
-    // const [filteredProducts, setFilteredProducts] = useState([])
     const [toggle, setToggle] = useState(false)
     // const [toggleCart, setToggleCart] = useState(false)
     
@@ -17,8 +16,6 @@ const Navbar = () => {
         const value = e.target.value.toLowerCase()
         let result = []
         result = products.filter(product=> product.title.search(value) !== -1)
-        // result = products.filter(product=> product.title.indexOf(value) != -1)
-        // console.log(result)
         setFilteredProducts(result)
         if (value.length === 0) {
             return setFilteredProducts(null)

@@ -2,6 +2,7 @@
     background-color: rgb(187, 198, 230);
 }
 
+
 @media only screen and (min-width: 768px) {
     .Container {
         width: 100%;

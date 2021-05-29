@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     height: 90px;
+    margin-top: 2rem;
     /* background-color: red; */
 }
 .Cost, .Tot {
@@ -46,12 +47,14 @@
 
 
 .Basecontainer {
-    height: 270px;
+    height: 180px;
     background: rgb(54, 28, 33);
     position: fixed;
     bottom: 0;
     width: 100%;
     color: white;
+    left: 0;
+    right: 0;
 }
 .Basewrapper {
     height: 100%;

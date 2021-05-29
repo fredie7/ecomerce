@@ -32,6 +32,7 @@ const ProductContextProvider = props => {
 
     const itemDetails = id=> {
         const product = getProduct(id);
+        console.log(product)
         setProductDetails(product)
     }
 

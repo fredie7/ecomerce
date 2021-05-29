@@ -2,18 +2,19 @@
     padding: 20px;
     /* background: coral; */
     display: flex;
+    margin-top: 2rem;
     /* height: 100vh; */
 }
 .Wrapper {
 }
 .Viewcart {
     background: #183a19ad;
-    padding: 0.7rem;
+    padding: 0.6rem;
     border-radius: 9px;
     color: white;
     border: 2px solid rgb(49, 7, 7);
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     font-family: cursive;
     letter-spacing: 0.3rem;
@@ -71,8 +72,11 @@
     letter-spacing: 0.23rem;
 }
 .Made, .Price, .Info, .Model, .Title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 0.2rem;
+}
+.Made, .Price {
+    font-size: 0.8rem !important;
 }
 .Add h4 {
     font-size: 1.2rem;

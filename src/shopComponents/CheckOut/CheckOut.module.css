@@ -4,12 +4,13 @@
     width: 100vw;
     /* background-color: violet; */
     background-color: #f1f1f1;
-    padding: 5px;
+    padding: 13px;
     font-size: 1.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
+    margin-top: 2rem;
 }
 .Formwrapper h3 {
     margin-top: 30px;
@@ -17,6 +18,9 @@
 }
 .Wrapper {
     width: 40rem;
+}
+.Total, .Detail {
+    font-size: 1.2rem;
 }
 .Card {
     display: flex;
@@ -45,8 +49,8 @@
 }
 .Cardholderinput input {
     width: 100%;
-    padding: 10px;
-    font-size: 30px;
+    padding: 9px;
+    font-size: 25px;
     border-radius: 6px;
 }
 .Expirydateinput {
@@ -61,7 +65,7 @@
 }
 .Exp input {
     flex-basis: 48%;
-    padding: 10px;
+    padding: 9px;
     font-size: 12px;
     border-radius: 6px;
 }
@@ -77,19 +81,19 @@
 }
 .Cardholdinput input {
     width: 100%;
-    padding: 10px;
-    font-size: 30px;
+    padding: 9px;
+    font-size: 25px;
     border-radius: 6px;
 }
 .Cardholdcvcinput input {
     width: 100%;
-    padding: 10px;
-    font-size: 30px;
+    padding: 9px;
+    font-size: 25px;
     border-radius: 6px;
 }
 
 .Cardholder p, .Expirydate p, .Cardnumber p, .Cvc p {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
 }
 .Cardnumber {
     margin-top: 30px;
@@ -119,6 +123,7 @@
     text-align: center;
     font-family: cursive;
     font-size: 1.3rem;
+    margin-top: 2rem;
 }
 
 @media only screen and (min-width:768px) {

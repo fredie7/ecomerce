@@ -9,13 +9,9 @@ const Description = (props) => {
     const { product } = location;
     // const { productDetails, addToCart, products } = useContext(ProductContext)
     const { addToCart } = useContext(ProductContext)
-    // console.log(productDetails)
-    // const selectedProduct = products.find(item => item.id === product.id)
-    // if (selectedProduct === 'undefined') {
-    //     return null
-    // }
     
     const {id, title, img, price, company, info} = product
+    
     return (
         <div className={classes.Container}>
             <div className={classes.Wrapper}>
