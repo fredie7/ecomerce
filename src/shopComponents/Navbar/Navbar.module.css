@@ -31,6 +31,7 @@
     padding: 10px;
     font-size: 17px;
     letter-spacing: 0.08rem;
+    border-bottom: none;
 }
 .Logo, .Icon {
     flex-basis: 20%;

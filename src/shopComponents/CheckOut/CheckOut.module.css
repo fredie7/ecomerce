@@ -21,7 +21,7 @@
     text-transform: capitalize;
 }
 .Wrapper {
-    width: 40rem;
+    width: 100%;
 }
 .Total, .Detail {
     font-size: 1.2rem;
