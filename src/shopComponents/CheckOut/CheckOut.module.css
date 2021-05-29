@@ -1,5 +1,5 @@
 .FormContainer {
-    height: 40rem;
+    height: 100vh;
     /* width: 30rem; */
     width: 100vw;
     /* background-color: violet; */
@@ -37,6 +37,7 @@
 .Cardnumber {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 .Cardnumber p {
     font-size: 1.6rem;
@@ -79,6 +80,7 @@ input {
 .Cardhold {
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 .Cardholdinput {
     flex-basis: 60%;
@@ -107,6 +109,9 @@ input {
 }
 .Cvc {
     font-weight: bold;
+}
+.Card {
+    overflow: hidden;
 }
 
 
@@ -137,7 +142,7 @@ input {
     }
     
     .FormContainer {
-        height: 40rem;
+        /* height: 40rem; */
         /* width: 30rem; */
         width: 100%;
         background-color: #f1f1f1;
@@ -165,6 +170,7 @@ input {
     .Cardinput {
         display: flex;
         justify-content: space-between;
+        overflow: hidden;
     }
     .Cardholderinput {
         flex-basis: 60%;
