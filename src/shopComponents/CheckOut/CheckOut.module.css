@@ -40,7 +40,7 @@
     overflow: hidden;
 }
 .Cardnumber p {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
 }
 
 .Cardinput {
@@ -102,7 +102,7 @@ input {
 }
 
 .Cardholder p, .Expirydate p, .Cardnumber p, .Cvc p {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
 }
 .Cardnumber {
     margin-top: 30px;
