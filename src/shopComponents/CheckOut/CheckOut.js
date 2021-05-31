@@ -1,7 +1,11 @@
 import React from 'react'
 import classes from './CheckOut.module.css'
+import {ProductContext} from '../../context/ProductContext';
+
 
 const CheckOut = () => {
+    const {cartTotalDetails} = React.useContext(ProductContext)
+    const{ cartTotals } = cartTotalDetails
     return (
         <>
             <h4 className={classes.Pay}>PROCEED TO MAKE PAYMENT</h4>
@@ -10,7 +14,7 @@ const CheckOut = () => {
                     <div className={classes.Total}>
                     </div>
                     <div className={classes.Formwrapper}>
-                        <h3 className={classes.TotalPrice}>TOTAL AMOUNT: <span>$</span>10</h3>
+                        <h3 className={classes.TotalPrice}>TOTAL AMOUNT: <span>$</span>{cartTotals.toFixed(2)}</h3>
                         <h3 className={classes.Detail}>credit card details</h3>
                         <div className={classes.Card}>
                             <div className={classes.Cardholder}>
