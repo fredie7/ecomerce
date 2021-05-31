@@ -51,7 +51,7 @@ const CheckOut = () => {
                             </div>
                         </div>
 
-                        <h3 className={classes.Proceed}>proceed</h3>
+                        <p className={classes.Proceed}>proceed</p>
 
                         </div>
                     </div>

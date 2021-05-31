@@ -60,7 +60,7 @@ const Navbar = () => {
                 </div>
             </nav>
 
-            <Sidebar toggle={toggle}/>
+            {/* <Sidebar toggle={toggle}/> */}
             
             {/* <Overlay /> */}
         </>

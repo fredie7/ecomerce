@@ -120,11 +120,11 @@ input {
     color: white;
     text-transform: uppercase !important;
     font-family: cursive;
-    font-size: 2.5rem;
+    font-size: 2rem;
     border-radius: 8px;
     border: 2px solid orangered;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 10px;
     padding: 7px;
     letter-spacing: 0.8rem;
     cursor: pointer;
@@ -138,7 +138,7 @@ input {
 
 @media only screen and (min-width:768px) {
     .Cardholder p, .Expirydate p, .Cardnumber p, .Cvc p {
-        font-size: 2.3rem !important;
+        font-size: 1.4rem !important;
     }
     
     .FormContainer {
@@ -147,9 +147,12 @@ input {
         width: 100%;
         background-color: #f1f1f1;
         height: 100vh;
+        /* overflow: hidden; */
+        /* margin-top: -3rem; */
     }
     .Wrapper{
         height: 70vh;
+        width: 40vw;
     }
     
     .Card {
@@ -179,7 +182,7 @@ input {
     .Cardholderinput input {
         width: 100%;
         padding: 15px;
-        font-size: 25px;
+        font-size: 15px;
         border-radius: 6px;
     }
     .Expirydateinput {
@@ -195,7 +198,7 @@ input {
     .Exp input {
         flex-basis: 48%;
         padding: 15px;
-        font-size: 26px;
+        font-size: 15px;
         border-radius: 6px;
     }
     .Cardhold {
@@ -212,16 +215,16 @@ input {
     .Cardholdinput input {
         width: 100%;
         padding: 15px;
-        font-size: 25px;
+        font-size: 15px;
         border-radius: 6px;
     }
     .Cardholdcvcinput input {
         width: 100%;
         padding: 15px;
-        font-size: 25px;
+        font-size: 15px;
         border-radius: 6px;
     }
-    h3 .Proceed {
+    p .Proceed {
         text-transform: uppercase !important;
         cursor: pointer;
     }

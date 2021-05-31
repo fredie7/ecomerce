@@ -4,18 +4,11 @@ import { ProductContext } from '../../context/ProductContext';
 import { useLocation, Link } from 'react-router-dom';
 
 const Description = (props) => {
+    let productId = parseInt(props.match.params.productId)
     const { addToCart,products } = useContext(ProductContext)
-    console.log(products)
-    const params = useLocation();
-    console.log(params)
-    console.log(params.product)
-    const selectedProduct = products.find(item => item.id === params.product.id)
-    console.log(selectedProduct)
+    const selectedProduct = products.find(item => item.id === productId) || {}
     const {id, title, img, price, company, info, inCart} = selectedProduct
-    console.log(title, img, price, company, info, inCart)
-    
-    
-    
+        
     return (
         <div className={classes.Container}>
             <div className={classes.Wrapper}>
