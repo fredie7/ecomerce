@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import classes from './Description.module.css';
 import { ProductContext } from '../../context/ProductContext';
-import { useLocation, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Description = (props) => {
     let productId = parseInt(props.match.params.productId)

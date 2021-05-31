@@ -1,7 +1,7 @@
 import React, { useState, useContext, useRef, useEffect } from 'react';
 import classes from './Navbar.module.css';
 // import Overlay from '../Overlay/Overlay';
-import Sidebar from '../Sidebar/Sidebar';
+// import Sidebar from '../Sidebar/Sidebar';
 import {Link} from 'react-router-dom';
 import {ProductContext} from '../../context/ProductContext';
 
