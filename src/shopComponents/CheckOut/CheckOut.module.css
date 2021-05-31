@@ -70,9 +70,10 @@
 }
 .Exp input {
     flex-basis: 48%;
-    padding: 9px;
+    padding: 7px;
     font-size: 12px;
     border-radius: 6px;
+    margin-top: 15px;
 }
 input {
     border: none;
@@ -97,7 +98,7 @@ input {
 .Cardholdcvcinput input {
     width: 100%;
     padding: 9px;
-    font-size: 15px;
+    font-size: 16px;
     border-radius: 6px;
 }
 

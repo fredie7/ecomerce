@@ -27,7 +27,7 @@ const CheckOut = () => {
                             </div>
                             <div className={classes.Expirydateinput}>
                                 <div className={classes.Exp}>
-                                    <input type="text" placeholder="MM"/> <span><h1>/</h1></span>
+                                    <input type="text" placeholder="MM"/> <span><h3>/</h3></span>
                                     <input type="text" placeholder="YY"/>
                                 </div>
                             </div>
