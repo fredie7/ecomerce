@@ -55,7 +55,7 @@
 .Cardholderinput input {
     width: 100%;
     padding: 9px;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 6px;
 }
 .Expirydateinput {
@@ -91,13 +91,13 @@ input {
 .Cardholdinput input {
     width: 100%;
     padding: 9px;
-    font-size: 25px;
+    font-size: 15px;
     border-radius: 6px;
 }
 .Cardholdcvcinput input {
     width: 100%;
     padding: 9px;
-    font-size: 18px;
+    font-size: 15px;
     border-radius: 6px;
 }
 
@@ -195,7 +195,7 @@ input {
     .Exp input {
         flex-basis: 48%;
         padding: 15px;
-        font-size: 25px;
+        font-size: 26px;
         border-radius: 6px;
     }
     .Cardhold {
