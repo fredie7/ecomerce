@@ -23,7 +23,7 @@
 .Wrapper {
     width: 100%;
 }
-.Total, .Detail {
+.TotalPrice, .Detail {
     font-size: 1.2rem;
 }
 .Card {
@@ -55,7 +55,7 @@
 .Cardholderinput input {
     width: 100%;
     padding: 9px;
-    font-size: 25px;
+    font-size: 18px;
     border-radius: 6px;
 }
 .Expirydateinput {
@@ -97,7 +97,7 @@ input {
 .Cardholdcvcinput input {
     width: 100%;
     padding: 9px;
-    font-size: 25px;
+    font-size: 18px;
     border-radius: 6px;
 }
 
