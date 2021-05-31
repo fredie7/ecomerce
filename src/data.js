@@ -2,7 +2,7 @@ export const allProducts = [
     {
       id: 1,
       title: "apple",
-      img: "img/apple.jpg",
+      img: "/img/apple.jpg",
       price: 20,
       company: "APPLE FRUITS LTD",
       info:
@@ -14,7 +14,7 @@ export const allProducts = [
     {
       id: 2,
       title: "pear",
-      img: "img/pear.jpg",
+      img: "/img/pear.jpg",
       price: 38,
       company: "PEAR FRUITS LTD",
       info:
@@ -26,7 +26,7 @@ export const allProducts = [
     {
       id: 3,
       title: "banana",
-      img: "img/banana.jpg",
+      img: "/img/banana.jpg",
       price: 76,
       company: "BANANA FRUITS LTD",
       info:
@@ -38,7 +38,7 @@ export const allProducts = [
     {
       id: 4,
       title: "strawberry",
-      img: "img/strawberry.jpg",
+      img: "/img/strawberry.jpg",
       price: 120,
       company: "STRAWBERRY FRUITS LTD",
       info:
@@ -50,7 +50,7 @@ export const allProducts = [
     {
       id: 5,
       title: "pepper",
-      img: "img/pepper.jpg",
+      img: "/img/pepper.jpg",
       price: 35,
       company: "PEPPER FRUITS LTD",
       info:
@@ -62,7 +62,7 @@ export const allProducts = [
     {
       id: 6,
       title: "apricot",
-      img: "img/apricot.jpg",
+      img: "/img/apricot.jpg",
       price: 56,
       company: "APRICOT FRUITS LTD",
       info:
@@ -74,7 +74,7 @@ export const allProducts = [
     {
       id: 7,
       title: "pineapple",
-      img: "img/pineapple.jpg",
+      img: "/img/pineapple.jpg",
       price: 77,
       company: "PINE FRUITS LTD",
       info:
@@ -86,7 +86,7 @@ export const allProducts = [
     {
       id: 8,
       title: "carrot",
-      img: "img/carrot.jpg",
+      img: "/img/carrot.jpg",
       price: 98,
       company: "CARROT FRUIT LTD",
       info:
@@ -100,7 +100,7 @@ export const allProducts = [
   export const detailProduct = {
     id: 1,
     title: "Apple",
-    img: "img/apple.jpg",
+    img: "/img/apple.jpg",
     price: 20,
     company: "APPLE FRUITS LTD",
     info:

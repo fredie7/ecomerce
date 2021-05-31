@@ -4,13 +4,17 @@ import { ProductContext } from '../../context/ProductContext';
 import { useLocation, Link } from 'react-router-dom';
 
 const Description = (props) => {
-    const location = useLocation();
-    // console.log(location)
-    const { product } = location;
-    // const { productDetails, addToCart, products } = useContext(ProductContext)
-    const { addToCart } = useContext(ProductContext)
+    const { addToCart,products } = useContext(ProductContext)
+    console.log(products)
+    const params = useLocation();
+    console.log(params)
+    console.log(params.product)
+    const selectedProduct = products.find(item => item.id === params.product.id)
+    console.log(selectedProduct)
+    const {id, title, img, price, company, info, inCart} = selectedProduct
+    console.log(title, img, price, company, info, inCart)
     
-    const {id, title, img, price, company, info} = product
+    
     
     return (
         <div className={classes.Container}>
@@ -51,10 +55,8 @@ const Description = (props) => {
                                 <h4>Back</h4>
                             </div>
                             </Link>
-                            {/* <div style={{cursor:product.inCart ? "not-allowed" : "pointer"}} className={classes.Add} onClick={()=>addToCart(product.id)}> */}
-                            <div style={{pointerEvents:product.inCart ? "none" : "auto"}} className={classes.Add} onClick={()=>addToCart(id)}>
-                            {/* <div style={{cursor:product.inCart ? "not-allowed" : "pointer"}} className={classes.Add} onClick={product.inCart ? ()=>addToCart() : ''}> */}
-                                <h4>{product.inCart ? 'In Cart' : 'Add To Cart'}</h4>
+                            <div style={{pointerEvents: inCart ? "none" : "auto"}} className={classes.Add} onClick={()=>addToCart(id)}>
+                                <h4>{inCart ? 'In Cart' : 'Add To Cart'}</h4>
                             </div>
                         </div>
                         <Link to='/cart' style={{textDecoration:'none'}}>

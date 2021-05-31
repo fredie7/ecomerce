@@ -13,7 +13,7 @@ const ProductItems = (props) => {
                     const { id, img, price, title, inCart } = product;
                     return (
                         <div className={classes.ItemWrapper} key={id}
-                        onClick={()=>{history.push({pathname:'/description', product:product})}}
+                        onClick={()=>{history.push({pathname:`/description/${id}`, product:product})}}
                         >
                             <div className={classes.Image}>
                                 <img src={img} alt=""/>
