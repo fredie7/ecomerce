@@ -1,54 +1,48 @@
-/* .Side {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 50%;
-    cursor: pointer;
-}
-.Sidecontent {
-    background: crimson;
-    width: 100%;
-    margin-top: 60px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    height: 100%;
-    padding-top: 20px;
-    position: relative;
-    transition: all 0.3s ease-out;
-    display: none/;
-} */
-
 .Side {
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 1;
     height: 100%;
-    width: 50%;
-}
-.Sidecontent {
-    background: crimson;
-    width: 100%;
-    margin-top: 60px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    height: 100%;
-    padding-top: 20px;
-    transition: all 0.3s ease-out;
+    /* width: 50%; */
+    top: 50px;
+    left: 0;
+    /* background-color: blueviolet; */
+    background-color: #f4f4f4;
+    /* transition: left .3s ease; */
+    transition: opacity 0.5s;
+    opacity: 9;
+    box-shadow: 1px 0px rgb(168, 154, 154);
 }
 
-.Thirditem {
+.Sidecontent {
     position: absolute;
-    bottom: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.Sidecontent p {
+    color: black;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.Thirditem {
+    cursor: pointer;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    /* bottom: 50px; */
+    letter-spacing: 0.15rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+    color: black;
 }
 @media only screen and (min-width: 768px) {
     .Side {
-        width: 25%;
+        width: 25% !important;
     }
 }

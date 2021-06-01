@@ -1,10 +1,21 @@
+import React, {useContext} from 'react';
 import classes from './ProductItems.module.css';
 import { useHistory } from 'react-router-dom';
+import {ProductContext} from '../../../context/ProductContext';
+import Loading from '../../Loading/Loading';
 
 const ProductItems = (props) => {
+    const { loading, setLoading } = useContext(ProductContext)
     const history = useHistory()
     const { addToCart, products, filteredProducts } = props
-    
+    if (loading) {
+        return (
+            <main>
+                <Loading />
+            </main>
+        )
+    }
+
     const productsToRender = filteredProducts || products
     return (
         <>

@@ -113,21 +113,21 @@ const Cart = () => {
                         <div className={classes.Subtotall}>
                             <p>Subtotal :</p>
                             <span>$</span>
-                            <p>{subTotal}</p>
+                            <p>{subTotal.toFixed(2)}</p>
                         </div>
                     </div>
                     <div className={classes.Tax}>
                         <div className={classes.Taxx}>
                             <p>Tax :</p>
                             <span>$</span>
-                            <p>{cartTax}</p>
+                            <p>{cartTax.toFixed(2)}</p>
                         </div>
                     </div>
                     <div className={classes.Tottal}>
                         <div className={classes.Totttal}>
                             <p>Total :</p>
                             <span>$</span>
-                            <p>{cartTotals}</p>
+                            <p>{cartTotals.toFixed(2)}</p>
                         </div>
                     </div>
                     <div className={classes.Checkout}>

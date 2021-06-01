@@ -7,22 +7,31 @@ const ProductContextProvider = props => {
     const [products, setProducts] = useState([])
     const [productDetails, setProductDetails] = useState(detailProduct)
     const [cart, setCart] = useState([])
+    const [loading, setLoading] = useState(true)
     const [filteredProducts, setFilteredProducts] = useState(null)
     const [cartTotalDetails, setCartTotalDetails] = useState({cartCurrentTax:0, cartTax:0,cartTotals:0,subTotal:0})
     
     
 
     const setUpProducts = ()=> {
-        let items = []
-        allProducts.forEach(product=> {
+        setLoading(true)
+        console.log(loading)
+        try {
+            let items = []
+            allProducts.forEach(product=> {
             const singleProduct = {...product}
             items = [...items, singleProduct]
-        })
+            })
         return setProducts(items)
+        } catch (error) {
+            console.log(error)
+            setLoading(false)
+        }
     }
 
     useEffect(()=> {
         setUpProducts()
+        setLoading(false)
     }, [])
 
     const getProduct = id=> {
@@ -153,6 +162,9 @@ const ProductContextProvider = props => {
     const clearCart = ()=> {
         setCart([])
         setCartTotalDetails({cartCurrentTax:0, cartTax:0,cartTotals:0,subTotal:0})
+        const sampleProducts = [...products]
+        sampleProducts.map(product => product.inCart = false)
+        setProducts(sampleProducts)
     }
 
     return (
@@ -169,6 +181,8 @@ const ProductContextProvider = props => {
             decrement,
             setFilteredProducts,
             filteredProducts,
+            loading,
+            setLoading,
         }}>
             { props.children }
         </ProductContext.Provider>
