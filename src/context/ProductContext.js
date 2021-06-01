@@ -30,7 +30,7 @@ const ProductContextProvider = props => {
     }
 
     useEffect(()=> {
-        setUpProducts(products)
+        setUpProducts()
     }, [])
 
     const getProduct = id=> {
