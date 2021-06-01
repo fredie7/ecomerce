@@ -32,7 +32,7 @@ const ProductContextProvider = props => {
     useEffect(()=> {
         setUpProducts()
         setLoading(false)
-    }, [loading,products])
+    }, [])
 
     const getProduct = id=> {
         const product = products.find(item => item.id === id)
