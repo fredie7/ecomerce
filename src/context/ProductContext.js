@@ -22,17 +22,17 @@ const ProductContextProvider = props => {
             const singleProduct = {...product}
             items = [...items, singleProduct]
             })
+            setLoading(false)
         return setProducts(items)
         } catch (error) {
             console.log(error)
-            setLoading(false)
         }
     }
 
     useEffect(()=> {
         setUpProducts()
-        setLoading(false)
-    }, [products])
+        // setLoading(false)
+    }, [])
 
     const getProduct = id=> {
         const product = products.find(item => item.id === id)
