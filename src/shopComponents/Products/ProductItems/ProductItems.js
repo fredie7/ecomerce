@@ -5,7 +5,7 @@ import {ProductContext} from '../../../context/ProductContext';
 import Loading from '../../Loading/Loading';
 
 const ProductItems = (props) => {
-    const { loading, setLoading } = useContext(ProductContext)
+    const { loading } = useContext(ProductContext)
     const history = useHistory()
     const { addToCart, products, filteredProducts } = props
     if (loading) {

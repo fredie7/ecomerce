@@ -9,6 +9,7 @@ const Sidebar = (props) => {
         <div className={classes.Side} 
         style={
             {
+                // display: props.toggle ? 'block' : 'none',
                 width: props.toggle ? '50%' : '0',
                 opacity:props.toggle ?  '1' : '0',
                 transition:props.toggle ?  '0.4s' : '0'
