@@ -79,6 +79,9 @@ input {
     border: none;
     overflow-x: hidden;
 }
+input:focus {
+    outline: none;
+}
 .Cardhold {
     display: flex;
     justify-content: space-between;

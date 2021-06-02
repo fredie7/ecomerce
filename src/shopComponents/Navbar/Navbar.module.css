@@ -17,6 +17,9 @@
     height: 100%;
     width: 100%;
 }
+inpot:focus {
+    outline: none;
+}
 .Nav {
     display: flex;
     justify-content: space-between;
