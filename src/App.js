@@ -5,6 +5,8 @@ import Layout from './shopComponents/Layout/Layout';
 import Cart from './shopComponents/Cart/Cart';
 import Checkout from './shopComponents/CheckOut/CheckOut';
 import Products from './shopComponents/Products/Products';
+import Signup from './shopComponents/Signup/Signup';
+import Signin from './shopComponents/Signin/Signin';
 // import Modal from './shopComponents/Modal/Modal';
 import Description from './shopComponents/Description/Description';
 import ProductContext from './context/ProductContext';
@@ -20,6 +22,8 @@ function App() {
             <Route exact path='/cart' component={Cart} />
             <Route exact path='/description/:productId' component={Description} />
             <Route exact path='/checkout' component={Checkout} />
+            <Route exact path='/signup' component={Signup} />
+            <Route exact path='/signin' component={Signin} />
           </Layout>
         </Switch>
         {/* <Modal /> */}

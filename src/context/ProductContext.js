@@ -1,5 +1,6 @@
 import React, { useState, createContext, useEffect } from 'react';
 import {allProducts, detailProduct} from '../data'
+import {saveProducts} from '.././shopComponents/Storage/Storage'
 
 export const ProductContext = createContext();
 
@@ -10,7 +11,6 @@ const ProductContextProvider = props => {
     const [loading, setLoading] = useState(true)
     const [filteredProducts, setFilteredProducts] = useState(null)
     const [cartTotalDetails, setCartTotalDetails] = useState({cartCurrentTax:0, cartTax:0,cartTotals:0,subTotal:0})
-    
     
 
     const setUpProducts = ()=> {
@@ -23,6 +23,7 @@ const ProductContextProvider = props => {
             items = [...items, singleProduct]
             })
             setLoading(false)
+            saveProducts(items)
         return setProducts(items)
         } catch (error) {
             console.log(error)
