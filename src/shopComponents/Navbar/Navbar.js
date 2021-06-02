@@ -4,6 +4,7 @@ import classes from './Navbar.module.css';
 import Sidebar from '../Sidebar/Sidebar';
 import {Link} from 'react-router-dom';
 import {ProductContext} from '../../context/ProductContext';
+import image from '../../image/mall.png';
 
 
 const Navbar = () => {
@@ -43,6 +44,11 @@ const Navbar = () => {
                         <div className={classes.Navicon}></div>
                     </div>
                 </div>
+                {/* <Link to="/">
+                    <div className={classes.Home}>
+                        <img src={image} alt="home page"/>
+                    </div>
+                </Link> */}
                 <div className={classes.Search}>
                     <div className={classes.Searchbar}>
                         <input className={classes.Searchinput} type="text" 
