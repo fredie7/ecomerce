@@ -18,18 +18,18 @@ const Sidebar = (props) => {
             }
         }>
             {/* <div className={classes.Sidecontent} style={{display: props.toggle ? 'block' : 'none'}}> */}
-            <Link to='/'>
+            <Link to='/' style={{textDecoration: 'none'}}>
                 <div className={classes.Logo}>
                     <img src={image} alt=""/>
                 </div>
             </Link>
             <div className={classes.Sidecontent}>
-                <Link to='/signup'>
+                <Link to='/signup' style={{textDecoration: 'none'}}>
                     <div className={classes.Firstitem}>
                         <p>signup</p>
                     </div>
                 </Link>
-                <Link to='/signin'>
+                <Link to='/signin' style={{textDecoration: 'none'}}>
                     <div className={classes.Seconditem}>
                         <p>signin</p>
                     </div>
