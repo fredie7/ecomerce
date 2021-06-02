@@ -23,7 +23,7 @@ const Cart = () => {
                     </div>
                     <div className={classes.Chev}>
                         <div className={classes.Chevup} onClick={()=>increment(id)}>
-                            <i class="fas fa-chevron-up" ></i>
+                            <i class="fas fa-chevron-up"></i>
                         </div>
                         <div className={classes.Chevdown} onClick={()=>decrement(id)}>
                             <i class="fas fa-chevron-down"></i>
