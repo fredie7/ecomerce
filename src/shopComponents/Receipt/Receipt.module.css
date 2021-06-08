@@ -1,0 +1,60 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.ReceiptContainer {
+    background-color:#f1f1f1;
+    padding: 0 5px 5px 5px;
+    border-radius: 5px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    box-shadow: 4px 6px;
+    width: 85%;
+}
+
+.ReceiptDetail {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.ReceiptDetail p{
+    text-align: center;
+}
+.Title {
+    /* background-color: blueviolet; */
+    flex-basis: 25%;
+}
+p.Title {
+    text-align: left;
+}
+.Price {
+    margin-left: 2rem;
+    flex-basis: 25%;
+    /* background-color: red; */
+}
+.Quantity {
+    margin-left: 2rem;
+    flex-basis: 25%;
+    /* background-color: white; */
+}
+.Amount {
+    flex-basis: 25%;
+    margin-left: 2rem;
+    /* background-color: green; */
+}
+.Print {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .ReceiptContainer {
+        width: 40%;
+    }
+}
