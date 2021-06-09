@@ -7,7 +7,8 @@
 }
 .ReceiptContainer {
     background-color:#f1f1f1;
-    padding: 0 5px 5px 5px;
+    /* padding: 0 5px 5px 5px; */
+    padding: 15px;
     border-radius: 5px;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
@@ -26,11 +27,13 @@
     text-align: center;
 }
 .Title {
-    background-color: blueviolet;
     flex-basis: 25%;
 }
 p.Title {
     text-align: left;
+}
+p.Title, p.Quantity, p.Amount {
+    text-align: center;
 }
 .Price {
     margin-left: 2rem;
