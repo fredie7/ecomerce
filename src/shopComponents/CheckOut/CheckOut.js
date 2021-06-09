@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './CheckOut.module.css'
-import {ProductContext} from '../../context/ProductContext';
+import {ProductContext} from '../../context/ProductContext'
+import {Link} from 'react-router-dom'
 
 
 const CheckOut = () => {
@@ -55,7 +56,7 @@ const CheckOut = () => {
                             </div>
                         </div>
 
-                        <p className={classes.Proceed}>proceed</p>
+                        <Link to='/receipt'><p className={classes.Proceed}>proceed</p></Link>
 
                         </div>
                     </div>

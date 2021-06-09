@@ -4,14 +4,13 @@ import classes from './Navbar.module.css';
 import Sidebar from '../Sidebar/Sidebar';
 import {Link} from 'react-router-dom';
 import {ProductContext} from '../../context/ProductContext';
-import image from '../../image/mall.png';
+
 
 
 const Navbar = () => {
     const searched = useRef('')
-    const {products, setFilteredProducts} = useContext(ProductContext);
-    const [toggle, setToggle] = useState(false)
-    // const [toggleCart, setToggleCart] = useState(false)
+    const {products, setFilteredProducts, toggle,toggleNav,setToggle} = useContext(ProductContext);
+    // const [toggle, setToggle] = useState(false)
     
     const handleSearch = e=> {
         const value = e.target.value.toLowerCase()
@@ -22,13 +21,10 @@ const Navbar = () => {
             return setFilteredProducts(null)
         }
     }
-    // console.log(filteredProducts)
 
-    const toggleNav = ()=> {
-        // console.log( '======')
-        setToggle(!toggle)
-        console.log(!toggle, '======')
-    }
+    // const toggleNav = ()=> {
+    //     setToggle(!toggle)
+    // }
 
     useEffect(()=> {
         searched.current.focus()
@@ -44,11 +40,7 @@ const Navbar = () => {
                         <div className={classes.Navicon}></div>
                     </div>
                 </div>
-                {/* <Link to="/">
-                    <div className={classes.Home}>
-                        <img src={image} alt="home page"/>
-                    </div>
-                </Link> */}
+               
                 <div className={classes.Search}>
                     <div className={classes.Searchbar}>
                         <input className={classes.Searchinput} type="text" 

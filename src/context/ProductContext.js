@@ -11,6 +11,18 @@ const ProductContextProvider = props => {
     const [loading, setLoading] = useState(true)
     const [filteredProducts, setFilteredProducts] = useState(null)
     const [cartTotalDetails, setCartTotalDetails] = useState({cartCurrentTax:0, cartTax:0,cartTotals:0,subTotal:0})
+
+    const [toggle, setToggle] = useState(false)
+    const toggleNav = ()=> {
+        setToggle(!toggle)
+    }
+    const togNav = ()=> {
+        if (toggle) {
+            setToggle(toggleNav)
+        }
+        return
+    }
+            
     
 
     const setUpProducts = ()=> {
@@ -183,6 +195,7 @@ const ProductContextProvider = props => {
             filteredProducts,
             loading,
             setLoading,
+            toggle,toggleNav,setToggle,togNav
         }}>
             { props.children }
         </ProductContext.Provider>

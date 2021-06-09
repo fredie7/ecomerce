@@ -28,12 +28,7 @@
 .Chevup, .Chevdown{
     font-size: 1rem;
 }
-.Chevup::active {
-    color: white;
-}
-.Chevdown::after {
-    color: white;
-}
+
 .Chev {
     display: flex;
     flex-direction: column;

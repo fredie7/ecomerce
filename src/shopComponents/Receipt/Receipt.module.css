@@ -26,7 +26,7 @@
     text-align: center;
 }
 .Title {
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     flex-basis: 25%;
 }
 p.Title {
@@ -35,17 +35,14 @@ p.Title {
 .Price {
     margin-left: 2rem;
     flex-basis: 25%;
-    /* background-color: red; */
 }
 .Quantity {
     margin-left: 2rem;
     flex-basis: 25%;
-    /* background-color: white; */
 }
 .Amount {
     flex-basis: 25%;
     margin-left: 2rem;
-    /* background-color: green; */
 }
 .Print {
     display: flex;
