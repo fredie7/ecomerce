@@ -10,13 +10,16 @@ export const getFromStorage = item => {
 
 export const saveCartItems = items => {
     let product;
-    if (localStorage.getItem('item') === null) {
+    if (localStorage.getItem('cart') === null) {
         product = []
     } else {
-        product = JSON.parse(localStorage.getItem(items))
+        product = JSON.parse(localStorage.getItem('cart'))
     }
     product.push(items)
-    localStorage.setItem('item', JSON.stringify(product))
+    localStorage.setItem('cart', JSON.stringify(product))
+}
+export const getCartItems = ()=> {
+    return JSON.parse(localStorage.getItem('cart'))
 }
 
 export const saveProducts = products => {

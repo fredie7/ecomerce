@@ -49,6 +49,9 @@ const Receipt = () => {
                             <p className={classes.Amount}><span>$</span>10</p>
                         </div> */}
                     </div>
+                    <div className={classes.Taxation}>
+                        <h3 className={classes.Tax}>tax: 10%</h3>
+                    </div>
                     <div className={classes.Print}>
                         <h3 className={classes.Prt}>print receipt</h3>
                         <h3 className={classes.Tot}>total: {cartTotals.toFixed(2)}</h3>

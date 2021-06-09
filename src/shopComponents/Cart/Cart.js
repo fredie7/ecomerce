@@ -60,54 +60,16 @@ const Cart = () => {
         <>
             <div className={classes.Container}>
                 {cartItems}
-                {/* <div className={classes.Wrapper}>
-                    <div className={classes.Product}>
-                        <div className={classes.Img}>
-                            <img src={image} alt=""/>
-                        </div>
-                        <div className={classes.Title}>
-                            <p>title</p>
-                        </div>
-                    </div>
-                    <div className={classes.Chev}>
-                        <div className={classes.Chevup}>
-                            <i class="fas fa-chevron-up"></i>
-                        </div>
-                        <div className={classes.Chevdown}>
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </div>
-                    <div className={classes.Quantity}>
-                        <div className={classes.Quant}>
-                            <p>10</p>
-                        </div>
-                    </div>
-                    <div className={classes.Price}>
-                        <div className={classes.Cost}>
-                            <span>$</span>
-                            <p>100</p>
-                        </div>
-                    </div>
-                    <div className={classes.Remove}>
-                        <div className={classes.Rem}>
-                            <i class="fas fa-trash"></i>
-                        </div>
-                    </div>
-                    <div className={classes.Total}>
-                        <div className={classes.Tot}>
-                            <span>$</span>
-                            <p>200</p>
-                        </div>
-                    </div>
-                </div> */}
             </div>
             
             <div className={classes.Basecontainer}>
                 <div className={classes.Basewrapper}>
-                    <div className={classes.Clearcart} onClick={()=>clearCart()}>
-                        <div className={classes.Clear}>
-                            Clear Cart
+                <div className={classes.Checkout}>
+                        <Link to="/checkout">
+                        <div className={classes.Checkout}>
+                            Checkout
                         </div>
+                        </Link>
                     </div>
                     <div className={classes.Subtotal}>
                         <div className={classes.Subtotall}>
@@ -130,12 +92,11 @@ const Cart = () => {
                             <p>{cartTotals.toFixed(2)}</p>
                         </div>
                     </div>
-                    <div className={classes.Checkout}>
-                        <Link to="/checkout">
-                        <div className={classes.Checkout}>
-                            Checkout
+                    
+                    <div className={classes.Clearcart} onClick={()=>clearCart()}>
+                        <div className={classes.Clear}>
+                            Clear Cart
                         </div>
-                        </Link>
                     </div>
                 </div>
             </div>

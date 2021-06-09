@@ -1,6 +1,6 @@
 import React, { useState, createContext, useEffect } from 'react';
 import {allProducts, detailProduct} from '../data'
-import {saveProducts} from '.././shopComponents/Storage/Storage'
+import {saveProducts,getFromStorage,saveCartItems,getCartItems} from '.././shopComponents/Storage/Storage'
 
 export const ProductContext = createContext();
 
@@ -70,7 +70,7 @@ const ProductContextProvider = props => {
         console.log(newProduct)
         setProducts([...availableProducts]);
         setCart([...newProduct]) 
-        console.log(cart) 
+        
 
         let subTotals = 0;
         newProduct.map(cartItem => subTotals += cartItem.total)

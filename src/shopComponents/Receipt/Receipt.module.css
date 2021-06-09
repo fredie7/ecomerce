@@ -78,6 +78,15 @@ p.Title {
     letter-spacing: 0.05rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+.Taxation {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    padding: 7px;
+    justify-content: flex-end;
+    color: rgb(59, 23, 23);
+}
+
 
 @media only screen and (min-width: 768px) {
     .ReceiptContainer {
