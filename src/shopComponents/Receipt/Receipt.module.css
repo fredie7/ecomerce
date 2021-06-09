@@ -62,6 +62,7 @@ p.Title {
 
 .Prt {
     font-family: cursive;
+    text-shadow: 2px 2px #FF0000;
 }
 .Tot {
     text-transform: uppercase;
@@ -69,7 +70,8 @@ p.Title {
 
 .Thanks {
     text-transform: uppercase;
-    color: green;
+    color: purple;
+    text-shadow: 1px 1px green;
     margin-bottom: 2rem;
     text-align: center;
     letter-spacing: 0.05rem;
