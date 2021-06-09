@@ -3,7 +3,10 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+    background-color: rgb(238, 226, 226);
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .ReceiptContainer {
     background-color:#f1f1f1;
@@ -12,7 +15,7 @@
     border-radius: 5px;
     border-left: 1px solid black;
     border-bottom: 1px solid black;
-    box-shadow: 4px 6px;
+    box-shadow: 2px 4px rgb(119, 30, 30);
     width: 100%;
 }
 
