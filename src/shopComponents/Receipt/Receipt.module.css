@@ -58,15 +58,22 @@ p.Title {
     justify-content: space-between;
     padding-right: 10px;
     /* text-transform: capitalize; */
+}
+
+.Prt {
     font-family: cursive;
 }
+.Tot {
+    text-transform: uppercase;
+}
+
 .Thanks {
     text-transform: uppercase;
     color: green;
     margin-bottom: 2rem;
     text-align: center;
     letter-spacing: 0.05rem;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media only screen and (min-width: 768px) {

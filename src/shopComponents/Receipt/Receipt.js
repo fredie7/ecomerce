@@ -21,7 +21,7 @@ const Receipt = () => {
         <>
             <div className={classes.Container}>
                 <div className={classes.ReceiptContainer}>
-                    <h4 className={classes.Thanks}>thank you for your patronage!</h4>
+                    <h4 className={classes.Thanks}>thanks for your patronage!</h4>
                     <div className={classes.ReceiptDetail}>
                         {/* <p className={classes.Title}>Product(s)</p>
                         <p className={classes.Price}>Price</p>
@@ -50,8 +50,8 @@ const Receipt = () => {
                         </div> */}
                     </div>
                     <div className={classes.Print}>
-                        <h3>print receipt</h3>
-                        <h3>total: {cartTotals.toFixed(2)}</h3>
+                        <h3 className={classes.Prt}>print receipt</h3>
+                        <h3 className={classes.Tot}>total: {cartTotals.toFixed(2)}</h3>
                     </div>
                 </div>
             </div>
