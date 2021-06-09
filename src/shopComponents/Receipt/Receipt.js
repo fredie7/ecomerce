@@ -21,6 +21,7 @@ const Receipt = () => {
         <>
             <div className={classes.Container}>
                 <div className={classes.ReceiptContainer}>
+                    <h4 className={classes.Thanks}>thank you for your patronage!</h4>
                     <div className={classes.ReceiptDetail}>
                         {/* <p className={classes.Title}>Product(s)</p>
                         <p className={classes.Price}>Price</p>

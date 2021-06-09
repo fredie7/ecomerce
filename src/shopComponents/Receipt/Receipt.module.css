@@ -38,22 +38,35 @@ p.Title {
 p.Title, p.Quantity, p.Amount {
     text-align: center;
 }
+p.Title {
+    text-align: left !important;
+}
 .Price {
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     flex-basis: 25%;
 }
 .Quantity {
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
     flex-basis: 25%;
 }
 .Amount {
     flex-basis: 25%;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
 }
 .Print {
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
+    /* text-transform: capitalize; */
+    font-family: cursive;
+}
+.Thanks {
+    text-transform: uppercase;
+    color: green;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    font-family: cursive;
 }
 
 @media only screen and (min-width: 768px) {
