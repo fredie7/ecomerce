@@ -22,6 +22,12 @@ const ProductContextProvider = props => {
         }
         return
     }
+    const notTogNav = ()=> {
+        if (!toggle) {
+            setToggle(toggleNav)
+        }
+        return
+    }
             
     
 
@@ -195,7 +201,7 @@ const ProductContextProvider = props => {
             filteredProducts,
             loading,
             setLoading,
-            toggle,toggleNav,setToggle,togNav
+            toggle,toggleNav,setToggle,togNav,notTogNav
         }}>
             { props.children }
         </ProductContext.Provider>

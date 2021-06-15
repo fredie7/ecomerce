@@ -9,7 +9,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 3;
+    z-index: 0;
+    opacity: 0.8;
 }
 
 .Startshopping h3 {

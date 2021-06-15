@@ -2,12 +2,14 @@
 import classes from './Sidebar.module.css';
 import {Link} from 'react-router-dom'
 import image from '../../image/mall.png'
+import Overlay from '../Overlay/Overlay';
+
 
 const Sidebar = (props) => {
-    console.log(props.toggle)
     // const [toggle, settoggle] = useState(false)
     // console.log(props.toggle)
     return (
+        <>
         <div className={classes.Side} 
         style={
             {
@@ -23,6 +25,15 @@ const Sidebar = (props) => {
                     <img src={image} alt=""/>
                 </div>
             </Link>
+            {/* <div className={classes.Firstcategory}>
+                <div className={classes.Categories}>
+                    <p>category 1</p>
+                    <p>category 2</p>
+                    <p>category 3</p>
+                    <p>category 4</p>
+                    <p>category 5</p>
+                </div>
+            </div> */}
             <div className={classes.Sidecontent}>
                 <Link to='/signup' style={{textDecoration: 'none'}}>
                     <div className={classes.Firstitem}>
@@ -39,6 +50,10 @@ const Sidebar = (props) => {
                 <p>logout</p>
             </div>
         </div>
+        {
+            props.toggle ? <Overlay /> : ''
+        }
+        </>
     )
 }
 
