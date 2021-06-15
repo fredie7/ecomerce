@@ -1,9 +1,17 @@
+html {
+    /* height: 100%; */
+}
 .Wrapper {
     display: flex;
     justify-content: space-between;
     height: 90px;
     margin-top: 2rem;
     /* background-color: red; */
+    /* height: 100%; */
+    /* overflow: scroll; */
+}
+.Wrap {
+   
 }
 .Cost, .Tot {
     display: flex;
@@ -44,6 +52,11 @@
 
 .Chev, .Remove {
     cursor: pointer;
+}
+.Container {
+    overflow-y: scroll;
+    /* height: 100%; */
+    height: 1300px;
 }
 
 

@@ -11,7 +11,7 @@ const Cart = () => {
     const cartItems = cart.map(cartItem => {
         const{ id,title,img,price,total,count, } = cartItem
         return(
-            <div key={id}>
+            <div key={id}className={classes.Wrap}>
                  <div className={classes.Wrapper}>
                     <div className={classes.Product}>
                         <div className={classes.Img}>
