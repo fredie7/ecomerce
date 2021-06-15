@@ -4,13 +4,13 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgb(153, 151, 35);
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     z-index: 0;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .Startshopping h3 {
@@ -20,6 +20,6 @@
 
 @media only screen and (min-width: 768px) {
     .Overlay {
-        display: none;
+        /* display: none; */
     }
 }

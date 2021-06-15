@@ -25,14 +25,14 @@
     justify-content: space-between;
     padding-left: 5px;
     padding-right: 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .ReceiptDetail p{
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .Title {
-    flex-basis: 25%;
+    flex-basis: 35%;
 }
 p.Title {
     text-align: left;
