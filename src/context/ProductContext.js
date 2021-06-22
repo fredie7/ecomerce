@@ -41,7 +41,7 @@ const ProductContextProvider = props => {
             items = [...items, singleProduct]
             })
             setLoading(false)
-            saveProducts(items)
+            // saveProducts(items)
         return setProducts(items)
         } catch (error) {
             console.log(error)
@@ -76,6 +76,7 @@ const ProductContextProvider = props => {
         console.log(newProduct)
         setProducts([...availableProducts]);
         setCart([...newProduct]) 
+        console.log([...newProduct])
         
 
         let subTotals = 0;
@@ -89,9 +90,10 @@ const ProductContextProvider = props => {
             cartTotals: total,
             subTotal: subTotals,
         })
+        console.log(cartTotalDetails)
     }
     console.log(products)
-    // console.log(cartTotalDetails)
+    console.log(cartTotalDetails)
 
     const removeProduct = (id)=> {
         let sampleProducts = [...products]
@@ -181,7 +183,14 @@ const ProductContextProvider = props => {
         setCart([])
         setCartTotalDetails({cartCurrentTax:0, cartTax:0,cartTotals:0,subTotal:0})
         const sampleProducts = [...products]
-        sampleProducts.map(product => product.inCart = false)
+        sampleProducts.map(product => {
+            product.inCart = false
+            product.count = 1
+            const price = product.price
+            product.total = 0
+        })
+        // sampleProducts.map(product => console.log(product))
+        console.log(cart)
         setProducts(sampleProducts)
     }
 
