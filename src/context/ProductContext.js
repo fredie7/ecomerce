@@ -84,6 +84,7 @@ const ProductContextProvider = props => {
         let currentTax = subTotals * 0.1
         let tax = parseFloat(currentTax.toFixed(2))
         let total = subTotals + tax
+        saveCartItems(newProduct)
         setCartTotalDetails({
             cartCurrentTax: currentTax,
             cartTax: tax,
@@ -92,8 +93,6 @@ const ProductContextProvider = props => {
         })
         console.log(cartTotalDetails)
     }
-    console.log(products)
-    console.log(cartTotalDetails)
 
     const removeProduct = (id)=> {
         let sampleProducts = [...products]

@@ -1,0 +1,57 @@
+.Container {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    /* background-color: red; */
+    width: 100%;
+}
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.Signup {
+    border: 1px solid black;
+    margin-bottom: 0.4rem;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    border-radius: 6px;
+    border-style: none;
+}
+.Footer {
+    width: 7rem;
+    background-color: white;
+    padding: 4px;
+    text-align: center;
+    border-radius: 6px;
+    /* border: 0.3px solid black; */
+}
+.Btn {
+}
+    
+.BtnText {
+    letter-spacing: 0.1rem;
+    font-size: 1.7rem;
+}
+@media only screen and (min-width: 768px) {
+    .Wrapper {
+        width: 50%;
+    }
+    .Footer {
+        width: 9rem;
+    }
+    .BtnText {
+        font-size: 1.9rem;
+        letter-spacing: 0.26rem;
+    }
+    .Footer:hover {
+        box-shadow: inset 0 -4px 0 0 rgba(0,0,0,0.2),0 0 8px 0 rgba(0,0,0,0.5);
+    }
+    .Footer:focus {
+        box-shadow: inset 0 3px 5px 0 rgba(0,0,0,0.2);
+    }
+}

@@ -8,19 +8,18 @@ export const getFromStorage = item => {
     }
 }
 
-export const saveCartItems = items => {
-    let product;
-    if (localStorage.getItem('cart') === null) {
-        product = []
-    } else {
-        product = JSON.parse(localStorage.getItem('cart'))
-    }
-    product.push(items)
-    localStorage.setItem('cart', JSON.stringify(product))
+export const saveCartItems = item => {
+    return localStorage.setItem('cart', JSON.stringify(item))
 }
 export const getCartItems = ()=> {
-    return JSON.parse(localStorage.getItem('cart'))
+    let cart;
+    if (localStorage.getItem('cart') === null) {
+        cart = []
+    } else {
+        return JSON.parse(localStorage.getItem('cart'))
+    }
 }
+        
 
 export const saveProducts = products => {
     return localStorage.setItem('item', JSON.stringify(products))
