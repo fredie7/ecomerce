@@ -1,6 +1,5 @@
 .Container {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -16,9 +15,7 @@
 .Signup {
     border: 1px solid black;
     margin-bottom: 0.4rem;
-    /* padding: 0.8rem; */
     padding: 15px;
-    /* font-size: 1.6rem; */
     font-size: 15px;
     text-decoration: none;
     letter-spacing: 0.1rem;
@@ -36,7 +33,6 @@
     padding-left: 0;
     text-align: center;
     border-radius: 6px;
-    /* border: 0.3px solid black; */
     background-color: rgb(122, 168, 122);
     border: 2px solid orangered;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -50,7 +46,6 @@
 .BtnText {
     letter-spacing: 0.1rem;
     font-size: 1.7rem;
-    /* text-align: left; */
 }
 .Foot {
     display: flex;
@@ -60,16 +55,12 @@
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
 }
-.Link {
-    text-decoration: none;
-}
 .Got {
     cursor: pointer;
 }
 @media only screen and (min-width: 768px) {
     .Wrapper {
         width: 50%;
-        /* background-color: red; */
     }
     .Footer {
         width: 9rem;
@@ -86,20 +77,16 @@
     }
     .Signup {
         font-size: 1.3rem;
-        /* border: 1px solid black; */
         margin-bottom: 0.4rem;
         padding: 0.8rem;
         letter-spacing: 0.1rem;
         border-radius: 6px;
-        /* border-style: none; */
     }
     .BtnText {
         letter-spacing: 0.1rem;
         font-size: 1.5rem;
-        /* text-align: left; */
     }
     .Btn {
-        /* border: 1px solid black; */
         border-radius: 6px;
     }
 }

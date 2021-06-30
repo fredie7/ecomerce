@@ -9,6 +9,7 @@ import Signup from './shopComponents/Signup/Signup';
 import Signin from './shopComponents/Signin/Signin';
 import Receipt from './shopComponents/Receipt/Receipt';
 // import Modal from './shopComponents/Modal/Modal';
+import CreateProduct from './shopComponents/Admin/CreateProduct/CreateProduct'
 import Description from './shopComponents/Description/Description';
 import ProductContext from './context/ProductContext';
 
@@ -26,6 +27,7 @@ function App() {
             <Route exact path='/signup' component={Signup} />
             <Route exact path='/signin' component={Signin} />
             <Route exact path='/receipt' component={Receipt} />
+            <Route exact path='/createProduct' component={CreateProduct} />
           </Layout>
         </Switch>
         {/* <Modal /> */}

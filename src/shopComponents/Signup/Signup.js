@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './Signup.module.css'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
     return (
@@ -14,6 +15,16 @@ const Signup = () => {
                     <div className={classes.Btn}>
                         <p className={classes.BtnText}>signup</p>
                     </div>
+                </div>
+                <div className={classes.Foot}>
+                    <div className={classes.Got}>
+                        <p className={classes.GotText}>got an account ?</p>
+                    </div>
+                    <Link to='/signin' className={classes.Link}>
+                        <div className={classes.Got}>
+                            <p className={classes.GotText}>signin</p>
+                        </div>
+                    </Link>
                 </div>
             </div>
           </div>
