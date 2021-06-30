@@ -11,7 +11,7 @@ const Signin = () => {
                 <input type="text" placeholder='enter password' className={classes.Signup}/>
                 <div className={classes.Footer}>
                     <div className={classes.Btn}>
-                        <p className={classes.BtnText}>signup</p>
+                        <p className={classes.BtnText}>signin</p>
                     </div>
                 </div>
                 <div className={classes.Foot}>
