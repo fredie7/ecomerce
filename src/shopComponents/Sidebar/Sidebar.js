@@ -1,16 +1,20 @@
-// import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import classes from './Sidebar.module.css';
 import {Link} from 'react-router-dom'
 import image from '../../image/mall.png'
 import Overlay from '../Overlay/Overlay';
+import {ProductContext} from '../../context/ProductContext';
+
 
 
 const Sidebar = (props) => {
+    const {toggle,toggleNav,setToggle,togNav} = useContext(ProductContext);
+
     // const [toggle, settoggle] = useState(false)
     // console.log(props.toggle)
     return (
         <>
-        <div className={classes.Side} 
+        <div className={classes.Side}  onClick={togNav}
         style={
             {
                 // display: props.toggle ? 'block' : 'none',

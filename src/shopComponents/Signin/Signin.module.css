@@ -66,6 +66,27 @@
 .Got {
     cursor: pointer;
 }
+
+.SetError {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+.Error {
+    font-family: cursive;
+    text-shadow: 1px 1px #FF0000;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.3rem;
+    /* color: orange; */
+    /* font-size: 1.7rem; */
+    /* text-transform: capitalize; */
+    background-color: white;
+}
+
 @media only screen and (min-width: 768px) {
     .Wrapper {
         width: 50%;
