@@ -14,19 +14,29 @@ const CreateProduct = () => {
     const handleSubmit = async (e)=> {
         e.preventDefault()
         
-        let photo = new FormData()
-        photo = photo.append('image', image)
+        let data = new FormData()
+        data.append('photo', image)
+        data.append('title', title)
+        data.append('price', price)
+        data.append('description', description)
+        data.append('quantity', quantity)
+        data.append('status', status)
+        data.append('producedBy', producedBy)
+        data.append('count', count)
+    
 
-        const product = { title,price,description,quantity,status,producedBy,count,photo }
-        console.log(product)
-        console.log(image.name)
+        // const product = { title,price,description,quantity,status,producedBy,count,photo }
+        // console.log(product)
+        // console.log(image.name)
+        console.log(data)
        try {
         const productData = await fetch('http://localhost:9000/api/v1/createProduct', {
             method: 'POST',
             headers: {
-                'Content-Type' : 'application/json'
+                'Content-Type' : 'multipart/form-data'
             },
-            body: JSON.stringify(product)
+            // body: JSON.stringify(product)
+            body: data
         })
         const response = await productData.json()
         console.log(response)
